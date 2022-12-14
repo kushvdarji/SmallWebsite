@@ -17,11 +17,11 @@ function saveLanguage()
     <div>
       <form className="App" ><br/><br/>
          Language : 
-         <input id="kush" type="text" required value={language} onChange={(e)=>{setLanguage(e.target.value)}}></input><br/><br/>
+         <input id="kush" type="text"  required value={language} onChange={(e)=>{setLanguage(e.target.value)}}></input><br/><br/> 
           FrameWork : 
           <input id="dipen" type="text" required value={framework} onChange={(e)=>{setFramework(e.target.value)}}></input><br/><br/>
-          <button id="but" onClick={saveLanguage} type="button">Submit</button>
-          <button style={{padding:"10px 10px 10px 10px",borderRadius:"15%",}} id="but"><Link to="/login/home/value">Submit</Link></button>
+          <Link to="/login/home/value"><button onClick={saveLanguage} style={{padding:"10px 10px 10px 10px",borderRadius:"15%",}} id="but" type="button">Submit</button></Link>
+         
       </form>
     </div>
   )

@@ -35,7 +35,7 @@ function Signup() {
                 </form>
                 <small>Already A User : <Link to="/login" style={{color:"lightblue"}}>Login</Link></small><br/>
                 <form style={{marginBottom:"15px"}}>
-                    <button className="submit" id="but"><Link to="/Signup/Home" style={{color:"black"}}>Submit</Link></button> 
+                    <Link to="/Signup/Home" style={{color:"black"}}><button className="submit" id="but">Submit</button> </Link>
                 </form>
             </div>
         </div>

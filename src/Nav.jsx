@@ -9,6 +9,11 @@ import About from './About';
 // import Home from './Home';
 import Hpage from "./Hpage";
 import Value from "./Value";
+import Call from "./Call";
+import Upload from "./Upload";
+// import Addition from "./Addition";
+import Table from "./Table";
+import Cardi from "./Cardi";
 function Nav ()
 {
     return(
@@ -21,7 +26,14 @@ function Nav ()
                     <Route path="/signup/home" element={<Hpage/>}></Route>
                     <Route path="/logout" element={<Logout/>}></Route>
                     <Route path='/login/home/about' element={<About/>}/>
+                    <Route path='/signup/home/about' element={<About/>}/>
                     <Route path="/login/home/value" element={<Value/>}></Route>
+                    <Route path="/signup/home/value" element={<Value/>}></Route>
+                    <Route path="/login/home/call" element={<Call/>}></Route>
+                    <Route path="/signup/home/call" element={<Call/>}></Route>
+                    <Route path="/login/home/upload" element={<Upload/>}></Route>
+                    <Route path="/login/home/upload/table" element={<Table/>}></Route>
+                    <Route path="login/home/cardi" element={<Cardi/>}></Route>
                 </Routes>
             </Router>
         </>

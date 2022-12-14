@@ -6,7 +6,6 @@ function Login() {
      <div className='login'>
         <div className='inner-login'>
             <h1><u>Login</u></h1>
-            
             <div className='login-text'>
                 <form>
                     <p>
@@ -22,7 +21,7 @@ function Login() {
                 </form>
                 <small>New User : <Link to="/signup" style={{color:"lightblue"}}>Signup</Link> </small>
                 <form style={{marginBottom:"15px"}}>
-                    <button className="submit" id="but"><Link to="/Login/Home" style={{color:"black",fontSize:"20px"}}>Submit</Link></button>
+                    <Link to="/Login/Home" style={{color:"black",fontSize:"20px"}}><button className="submit" id="but">Submit</button></Link>
                 </form>
             </div>
         </div>
